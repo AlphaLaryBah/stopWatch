@@ -1,15 +1,17 @@
-*{
-  /* margin: 0; */
-  /* padding: 0; */
+* {
   font-family: 'times new roman', sans-serif;
 }
 
+body {
+  background-color: #ffa600;
+  padding: 20px;
+  margin-top: 200px;
+}
 
-#outerbar{
+#outerbar {
   background: lightblue;
-    
-   width: 100%;
-  height:10% ;
+  width: 100%;
+  height: 10%;
   top: 40%;
   position: relative;
   border: solid;
@@ -18,67 +20,105 @@
   border-radius: 20px;
 }
 
-#innerbar{
+#innerbar {
   /* you change width to progress the bar with javascript*/
   width: 1%;
   height: 100%;
-  top:40%;
+  top: 40%;
   position: relative;
-  background-image: linear-gradient(cyan,aqua,turquoise);
+  background-image: linear-gradient(cyan, aqua, turquoise);
   border-radius: 16px;
-
 }
-#text{
+
+#text {
   color: #dcdcdc;
   font-size: 30px;
   position: relative;
-  left: 47% ;
+  left: 47%;
 }
 
-.timeNumber{
+.timeNumber {
   display: flex;
   margin-bottom: 10px;
-  align-items: baseline
+  align-items: baseline;
+  justify-content: center;
+  border: solid 1px white;
+  border-radius: 20px;
 }
-.time{
+
+.time {
   margin-left: 20px;
- flex-grow: 1;
+  flex-grow: 1;
 }
-.btn{
+
+.btn {
   display: flex;
+  align-items: baseline;
   justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
+  flex-grow: 1;
 }
 
-
-
-.progress{
-  /* center an item */
-  position: absolute;
+/* .progress{ */
+/* center an item */
+/* position: absolute;
   top:0;
   bottom: 0;
   left:20;right: 20;
-  margin: auto;
-}
-
-.progress-circle{
+  margin: auto; */
+/* width: 300px; */
+/* } */
+.progress-circle {
   stroke-dasharray: 189;
   stroke-dashoffset: 189;
 }
 
-.progressMnut{
-  /* center and item */
-   position: absolute;
-  top:0;
-  bottom: 0;
-  left:0;right: 0;
-  margin: auto;
-
-}
-
-.progress-circleMnut{
+.progress-circleMnut {
   stroke-dasharray: 189;
   stroke-dashoffset: 189;
+}
 
+.progress-circleHr {
+  stroke-dasharray: 189;
+  stroke-dashoffset: 189;
+}
+
+button {
+  border-radius: 5px;
+  background: orange;
+  color: white;
+  border: solid 1px white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+
+button:hover {
+  transition;
+  background: white;
+  border: solid 1px white;
+  color: orange;
+}
+
+.butons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+p {
+  display: flex;
+  font-size: 80px;
+  align-items: center;
+}
+
+.pTag {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
